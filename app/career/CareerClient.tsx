@@ -242,13 +242,13 @@ export default function CareerClient() {
   const [success, setSuccess] = useState(false);
   const [activeDept, setActiveDept] = useState("All");
   const [selectedRole, setSelectedRole] = useState("");
-const [honeypot, setHoneypot] = useState("");
-const [startedAt, setStartedAt] = useState(0);
-const formRef = useRef<HTMLFormElement>(null);
+  const [honeypot, setHoneypot] = useState("");
+  const [startedAt, setStartedAt] = useState<number>(0);
+  const formRef = useRef<HTMLFormElement>(null);
 
-useEffect(() => {
-  setStartedAt(Math.floor(Date.now() / 1000));
-}, []);
+  useEffect(() => {
+    setStartedAt(Math.floor(Date.now() / 1000));
+  }, []);
 
   const filteredJobs = useMemo(() => {
     if (activeDept === "All") return JOBS;
@@ -331,14 +331,14 @@ useEffect(() => {
       if (!response.ok || result?.success !== true) {
         throw new Error(
           result?.message ||
-            "We couldn't submit your application. Please try again or email us.",
+            "We couldn't submit your application. Please try again or email us."
         );
       }
 
       setSuccess(true);
       setMessage(
         result.message ||
-          "Thank you! Your application has been submitted. Our HR team will review it and contact you if there's a match.",
+          "Thank you! Your application has been submitted. Our HR team will review it and contact you if there's a match."
       );
       form.reset();
 
@@ -354,12 +354,27 @@ useEffect(() => {
       setMessage(
         error instanceof Error
           ? error.message
-          : "Something went wrong. Please email info@aarnainfradevelopers.com.",
+          : "Something went wrong. Please email info@aarnainfradevelopers.com."
       );
     } finally {
       setLoading(false);
     }
   }
+
+  // ── Structured data dates (computed once, no hydration mismatch) ────────
+  const today = new Date();
+  const postedDate = `${today.getFullYear()}-${String(
+    today.getMonth() + 1
+  ).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+
+  const validThroughDate = new Date(
+    today.getFullYear() + 1,
+    today.getMonth(),
+    today.getDate()
+  );
+  const validThrough = `${validThroughDate.getFullYear()}-${String(
+    validThroughDate.getMonth() + 1
+  ).padStart(2, "0")}-${String(validThroughDate.getDate()).padStart(2, "0")}`;
 
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -432,7 +447,9 @@ useEffect(() => {
         title: job.title,
         description: job.description,
         employmentType: job.type === "Internship" ? "INTERN" : "FULL_TIME",
-        datePosted: new Date().toISOString().split("T")[0],
+        datePosted: postedDate,
+        validThrough: validThrough,
+        directApply: true,
         hiringOrganization: {
           "@type": "Organization",
           name: "Aarna Infra Developers",
@@ -1081,7 +1098,6 @@ useEffect(() => {
               onSubmit={submitApplication}
               className="mt-6 space-y-4"
             >
-              {/* Honeypot */}
               <div
                 aria-hidden="true"
                 className="absolute -left-[10000px] h-px w-px overflow-hidden"
