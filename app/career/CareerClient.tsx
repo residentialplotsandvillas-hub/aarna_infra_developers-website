@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState, type FormEvent } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 
 const siteUrl = "https://aarnainfradevelopers.com";
@@ -241,9 +241,13 @@ export default function CareerClient() {
   const [success, setSuccess] = useState(false);
   const [activeDept, setActiveDept] = useState("All");
   const [selectedRole, setSelectedRole] = useState("");
-  const [honeypot, setHoneypot] = useState("");
-  const [startedAt] = useState(() => Math.floor(Date.now() / 1000));
-  const formRef = useRef<HTMLFormElement>(null);
+const [honeypot, setHoneypot] = useState("");
+const [startedAt, setStartedAt] = useState(0);
+const formRef = useRef<HTMLFormElement>(null);
+
+useEffect(() => {
+  setStartedAt(Math.floor(Date.now() / 1000));
+}, []);
 
   const filteredJobs = useMemo(() => {
     if (activeDept === "All") return JOBS;
