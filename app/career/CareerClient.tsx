@@ -246,8 +246,25 @@ export default function CareerClient() {
   const [startedAt, setStartedAt] = useState<number>(0);
   const formRef = useRef<HTMLFormElement>(null);
 
+  // State to hold dates after mount, avoiding new Date() during prerender.
+  const [postedDate, setPostedDate] = useState<string>("");
+  const [validThrough, setValidThrough] = useState<string>("");
+
   useEffect(() => {
     setStartedAt(Math.floor(Date.now() / 1000));
+
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const day = String(today.getDate()).padStart(2, "0");
+
+    setPostedDate(`${year}-${month}-${day}`);
+
+    const expiry = new Date(year + 1, today.getMonth(), today.getDate());
+    const expYear = expiry.getFullYear();
+    const expMonth = String(expiry.getMonth() + 1).padStart(2, "0");
+    const expDay = String(expiry.getDate()).padStart(2, "0");
+    setValidThrough(`${expYear}-${expMonth}-${expDay}`);
   }, []);
 
   const filteredJobs = useMemo(() => {
@@ -361,21 +378,6 @@ export default function CareerClient() {
     }
   }
 
-  // ── Structured data dates (computed once, no hydration mismatch) ────────
-  const today = new Date();
-  const postedDate = `${today.getFullYear()}-${String(
-    today.getMonth() + 1
-  ).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
-
-  const validThroughDate = new Date(
-    today.getFullYear() + 1,
-    today.getMonth(),
-    today.getDate()
-  );
-  const validThrough = `${validThroughDate.getFullYear()}-${String(
-    validThroughDate.getMonth() + 1
-  ).padStart(2, "0")}-${String(validThroughDate.getDate()).padStart(2, "0")}`;
-
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -434,52 +436,59 @@ export default function CareerClient() {
     })),
   };
 
-  const jobsSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Open Positions at Aarna Infra Developers",
-    numberOfItems: JOBS.length,
-    itemListElement: JOBS.map((job, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      item: {
-        "@type": "JobPosting",
-        title: job.title,
-        description: job.description,
-        employmentType: job.type === "Internship" ? "INTERN" : "FULL_TIME",
-        datePosted: postedDate,
-        validThrough: validThrough,
-        directApply: true,
-        hiringOrganization: {
-          "@type": "Organization",
-          name: "Aarna Infra Developers",
-          sameAs: siteUrl,
-          logo: `${siteUrl}/assets/img/Logo.jpg`,
-        },
-        jobLocation: {
-          "@type": "Place",
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: job.location,
-            addressRegion: "Telangana",
-            addressCountry: "IN",
-          },
-        },
-        experienceRequirements: {
-          "@type": "OccupationalExperienceRequirements",
-          monthsOfExperience: job.experience.includes("Fresher") ? 0 : 12,
-        },
-        skills: job.skills.join(", "),
-        industry: "Real Estate",
-      },
-    })),
-  };
+  // Only build the job schema when dates are available on the client.
+  const jobsSchema =
+    postedDate && validThrough
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Open Positions at Aarna Infra Developers",
+          numberOfItems: JOBS.length,
+          itemListElement: JOBS.map((job, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            item: {
+              "@type": "JobPosting",
+              title: job.title,
+              description: job.description,
+              employmentType:
+                job.type === "Internship" ? "INTERN" : "FULL_TIME",
+              datePosted: postedDate,
+              validThrough: validThrough,
+              directApply: true,
+              hiringOrganization: {
+                "@type": "Organization",
+                name: "Aarna Infra Developers",
+                sameAs: siteUrl,
+                logo: `${siteUrl}/assets/img/Logo.jpg`,
+              },
+              jobLocation: {
+                "@type": "Place",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: job.location,
+                  addressRegion: "Telangana",
+                  addressCountry: "IN",
+                },
+              },
+              experienceRequirements: {
+                "@type": "OccupationalExperienceRequirements",
+                monthsOfExperience: job.experience.includes("Fresher")
+                  ? 0
+                  : 12,
+              },
+              skills: job.skills.join(", "),
+              industry: "Real Estate",
+            },
+          })),
+        }
+      : null;
 
   const schemas = [
     organizationSchema,
     breadcrumbSchema,
     faqSchema,
-    jobsSchema,
+    ...(jobsSchema ? [jobsSchema] : []),
   ];
 
   return (
