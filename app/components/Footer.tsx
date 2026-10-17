@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import Container from "./Container";
+import CurrentYear from "./CurrentYear";
 
 const usefulLinks = [
   { label: "Home", href: "/" },
@@ -243,7 +244,7 @@ export default function Footer() {
       <div className="relative border-t border-white/10">
         <Container className="flex flex-col items-center justify-between gap-3 py-5 text-center sm:flex-row sm:text-left">
           <p className="text-xs leading-6 text-white/55">
-            © {new Date().getFullYear()}{" "}
+          © <CurrentYear />{" "}
             <Link
               href="/"
               className="font-bold text-white transition hover:text-[#FFFF00]"
