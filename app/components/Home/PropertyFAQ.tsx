@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "Can I enquire about farm lands near Hyderabad?",
     answer:
-      "Yes. Visit our Farm Lands page or Contact page to ask about available properties, locations and documentation.",
+      "Yes. Visit our Farm Lands page or Contact page to ask about available properties and locations and documentation.",
   },
   {
     question: "How do I get property prices and availability?",
