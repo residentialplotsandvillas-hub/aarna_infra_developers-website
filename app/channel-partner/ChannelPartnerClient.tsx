@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const siteUrl = "https://aarnainfradevelopers.com";
@@ -238,9 +238,13 @@ export default function ChannelPartnerClient() {
     phone: "",
     message: "",
   });
-  const [honeypot, setHoneypot] = useState("");
-  const [startedAt] = useState(() => Math.floor(Date.now() / 1000));
-  const formRef = useRef<HTMLFormElement>(null);
+const [honeypot, setHoneypot] = useState("");
+const [startedAt, setStartedAt] = useState(0);
+const formRef = useRef<HTMLFormElement>(null);
+
+useEffect(() => {
+  setStartedAt(Math.floor(Date.now() / 1000));
+}, []);
 
   function updateField<K extends keyof RegistrationFields>(
     key: K,
