@@ -122,7 +122,7 @@ const projects = [
   {
     name: "Oxy Flora",
     location: "Near Pharma City, Nednur, Srisailam Highway",
-    image: "/assets/img/ongoing-projects/Oxy-Flora.jpg",
+    image: "/img/projects/Oxy-Flora.jpg",
     alt: "Oxy Flora farm land project near Nednur and Srisailam Highway",
     href: "/projects/Oxy-Flora.html",
     number: "01",
@@ -132,7 +132,7 @@ const projects = [
   {
     name: "Golden Farm",
     location: "Balanagar, Bangalore Highway, Kallepally",
-    image: "/assets/img/ongoing-projects/Golden-Farm.jpg",
+    image: "/img/projects/Golden-Farm.jpg",
     alt: "Golden Farm agricultural land project near Balanagar and Kallepally",
     href: "/projects/Golden-Farm.html",
     number: "02",

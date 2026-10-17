@@ -16,7 +16,7 @@ const navItems = [
     href: "/services",
     children: [
       { label: "All Services", href: "/services" },
-      { label: "HMDA Master Plan", href: "/hmda-master-plan" },
+
     ],
   },
   {
@@ -147,7 +147,7 @@ export default function Navbar() {
           >
             <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-[#800000]/10 bg-white shadow-sm sm:h-12 sm:w-12">
               <Image
-                src="/assets/img/Logo.jpg"
+                src="/img/Logo.jpg"
                 alt="Aarna Infra Developers logo"
                 fill
                 priority

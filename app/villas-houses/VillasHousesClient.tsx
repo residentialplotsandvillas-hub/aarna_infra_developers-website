@@ -119,7 +119,7 @@ const projects = [
   {
     name: "SLN Sundaram Palm Villas",
     location: "Padmavathi Nagar, Bonguluru, Telangana",
-    image: "/assets/img/ongoing-projects/SLN-Sundaram-Palm-Villas.jpg",
+    image: "/img/projects/SLN-Sundaram.jpg",
     alt: "SLN Sundaram Palm Villas in Padmavathi Nagar, Bonguluru, Telangana",
     href: "/projects/SLN-Sundaram-Palm-Villas.html",
     number: "01",
@@ -395,7 +395,7 @@ export default function VillasHousesPage() {
 
             <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
               <img
-                src="/assets/img/ongoing-projects/SLN-Sundaram-Palm-Villas.jpg"
+                src="/img/projects/SLN-Sundaram-Palm-Villas.jpg"
                 alt="SLN Sundaram Palm Villas in Padmavathi Nagar, Bonguluru, Telangana"
                 className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
                 fetchPriority="high"

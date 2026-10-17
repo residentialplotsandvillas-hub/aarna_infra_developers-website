@@ -381,7 +381,7 @@ export default function ServicesClient() {
         <div className="relative">
           <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
             <img
-              src="/assets/img/services/Services.jpg"
+              src="/img/aarna-infra-developers-real-estate-services.png"
               alt="Real estate services by Aarna Infra Developers"
               className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
             />

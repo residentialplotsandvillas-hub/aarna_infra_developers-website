@@ -8,7 +8,7 @@ const properties = [
     location: "Hyderabad & surrounding locations",
     description:
       "Explore residential plot options for your future home or property investment.",
-    image: "/assets/img/open-plots.jpg",
+    image: "/img/open-plots.webp",
     href: "/openplots",
     tag: "RESIDENTIAL LAND",
     icon: "⌂",
@@ -18,7 +18,7 @@ const properties = [
     location: "Explore available locations",
     description:
       "Discover farm land options for buyers looking for space and a greener lifestyle.",
-    image: "/assets/img/farm-lands.jpg",
+    image: "/img/farm-lands.webp",
     href: "/farmlands",
     tag: "LAND & NATURE",
     icon: "♧",
@@ -28,7 +28,7 @@ const properties = [
     location: "Explore residential properties",
     description:
       "Find residential property options that match your lifestyle and requirements.",
-    image: "/assets/img/villas.jpg",
+    image: "/img/villas.jpg",
     href: "/villas-houses",
     tag: "YOUR NEXT HOME",
     icon: "⌂",

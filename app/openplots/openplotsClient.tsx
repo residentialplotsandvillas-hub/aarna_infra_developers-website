@@ -8,7 +8,7 @@ type PopupType = "callback" | "enquiry" | null;
 const projects = [
   {
     name: "Yuva Park",
-    image: "/assets/img/ongoing-projects/Yuva Park.jpg",
+    image: "/img/projects/Yuva Park.jpg",
     alt: "Yuva Park open plots near NRSC Shadnagar",
     location: "Near NRSC & Shadnagar",
     sold: true,
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     name: "Magadha",
-    image: "/assets/img/ongoing-projects/Magadha.jpg",
+    image: "/img/projects/Magadha.jpg",
     alt: "Magadha open plots near Maisigandi Temple Kadthal",
     location: "Near Maisigandi Temple, Kadthal",
     sold: false,
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     name: "Karthikeya Green County",
-    image: "/assets/img/ongoing-projects/Karthikeya.jpg",
+    image: "/img/projects/Karthikeya.jpg",
     alt: "Karthikeya Green County plots near Jadcherla",
     location: "Beside Bangalore Highway, Jadcherla",
     sold: true,
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     name: "Golden City",
-    image: "/assets/img/ongoing-projects/Golden-City.jpg",
+    image: "/img/projects/Golden-City.jpg",
     alt: "Golden City open plots near MRO Office Sadashivpet",
     location: "Near MRO Office, Sadashivpet",
     sold: false,
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     name: "Golden Terra",
-    image: "/assets/img/ongoing-projects/Golden-Terra.jpg",
+    image: "/img/projects/Golden-Terra.jpg",
     alt: "Golden Terra open plots beside Shadnagar Tollgate",
     location: "Beside Shadnagar Tollgate, near RRR",
     sold: false,
@@ -48,7 +48,7 @@ const projects = [
   },
   {
     name: "Golden Valley",
-    image: "/assets/img/ongoing-projects/Golden-Valley.jpg",
+    image: "/img/projects/Golden-Valley.jpg",
     alt: "Golden Valley plots near Microsoft Data Center Kothur",
     location: "Near Microsoft Data Center, P&G, JP Dargah, Kothur",
     sold: true,
@@ -56,7 +56,7 @@ const projects = [
   },
   {
     name: "Green Meadows",
-    image: "/assets/img/ongoing-projects/Green-Meadows.jpg",
+    image: "/img/projects/Green-Meadows.jpg",
     alt: "Green Meadows open plots in Balanagar and Shadnagar",
     location: "Balanagar Town and beside RRR (Shadnagar)",
     sold: false,

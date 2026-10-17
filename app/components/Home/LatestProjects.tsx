@@ -9,7 +9,7 @@ const projects = [
     location: "Hyderabad Region",
     description:
       "Explore residential plot options and request details about availability, pricing and documentation.",
-    image: "/assets/img/project-1.jpg",
+    image: "/img/Residential-Open-Plots.png",
   },
   {
     name: "Farm Land Opportunities",
@@ -17,7 +17,7 @@ const projects = [
     location: "Nearby Locations",
     description:
       "Discover available farm land options and ask our team about location and property details.",
-    image: "/assets/img/project-2.jpg",
+    image: "/img/Farm-Land-plots.webp",
   },
   {
     name: "Villas & Houses",
@@ -25,7 +25,7 @@ const projects = [
     location: "Hyderabad Region",
     description:
       "Explore residential property options to find a home that suits your requirements.",
-    image: "/assets/img/project-3.jpg",
+    image: "/img/villas-houses-lands.webp",
   },
 ];
 

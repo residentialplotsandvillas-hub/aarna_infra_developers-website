@@ -87,7 +87,7 @@ export default function HeroSection() {
           <div className="relative overflow-hidden rounded-[28px] border border-white/80 bg-white p-2 shadow-2xl shadow-[#183323]/10">
             <div className="relative h-[300px] overflow-hidden rounded-[22px] sm:h-[390px]">
               <Image
-                src="/assets/img/home-hero.jpg"
+                src="/img/open-plots.jpg"
                 alt="Residential plots and real estate development near Hyderabad"
                 fill
                 priority

@@ -82,7 +82,7 @@ const companyValues = [
   {
     number: "01",
     title: "About Our Company",
-    image: "/assets/img/about/About%20Company.jpg",
+    image: "/img/about.png",
     description:
       "Aarna Infra Developers helps homebuyers and property seekers explore residential plots, villas, apartments, independent houses and farmland opportunities across Hyderabad and nearby growth corridors. We aim to make the property search process informative through project details, site visits and customer support, so buyers can compare options and make confident decisions.",
     tag: "Our Foundation",
@@ -90,7 +90,7 @@ const companyValues = [
   {
     number: "02",
     title: "Our Vision",
-    image: "/assets/img/about/Our%20Vision.jpg",
+    image: "/img/Vision.png",
     description:
       "Our vision is to build lasting relationships with customers by providing clear property information, responsive service and opportunities that suit different homebuying and investment requirements. We believe that transparency, communication and follow-through are as important as the property itself.",
     tag: "Where We Are Going",
@@ -98,7 +98,7 @@ const companyValues = [
   {
     number: "03",
     title: "Our Team",
-    image: "/assets/img/about/Our%20Team.jpg",
+    image: "/img/Team.png",
     description:
       "Our team supports customers through property enquiries, project information, site visit coordination and booking-related assistance. Buyers should independently review all applicable property documents, approvals and registration details before purchasing so they understand exactly what they are investing in.",
     tag: "People Who Deliver",
@@ -106,7 +106,7 @@ const companyValues = [
   {
     number: "04",
     title: "Our Mission",
-    image: "/assets/img/about/Our%20Mission.jpg",
+    image: "/img/misson.jpg",
     description:
       "Our mission is to help customers make informed property decisions by focusing on service, communication, project information and ongoing support throughout their property search. From the first enquiry to the final site visit, we aim to keep things straightforward and helpful.",
     tag: "What Drives Us",
@@ -493,7 +493,7 @@ export default function AboutPage() {
 
             <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
               <img
-                src="/assets/img/about/About%20Company.jpg"
+                src="/img/Aarna Infra Developers-about.png"
                 alt="Aarna Infra Developers real estate company in Hyderabad"
                 className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
                 fetchPriority="high"
@@ -542,7 +542,7 @@ export default function AboutPage() {
         <div className="relative">
           <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
             <img
-              src="/assets/img/about/About%20Company.jpg"
+              src="/img/aarna-infra-developers-who-we-are.png"
               alt="Aarna Infra Developers real estate company in Hyderabad"
               className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
             />

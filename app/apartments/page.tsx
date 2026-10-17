@@ -116,7 +116,7 @@ const projects = [
   {
     name: "Myscape Songs Of The Sun",
     location: "Near Financial District, Hyderabad",
-    image: "/assets/img/ongoing-projects/Myscape-Songs-Of-The-Sun.jpg",
+    image: "/img/projects/Myscape-Songs-Of-The-Sun.jpg",
     alt: "Myscape Songs Of The Sun - Premium Apartments near Financial District Hyderabad",
     href: "/projects/Myscape-Songs-Of-The-Sun",
     status: "Explore Project",
@@ -125,7 +125,7 @@ const projects = [
   {
     name: "GNR's Vasavi Nirvana",
     location: "Attapur, Hyderabad",
-    image: "/assets/img/ongoing-projects/GNR-Vasavi.jpg",
+    image: "/img/projects/GNR-Vasavi.jpg",
     alt: "GNR's Vasavi Nirvana - Luxury Apartments in Attapur Hyderabad",
     href: "",
     status: "Sold Out",
@@ -134,7 +134,7 @@ const projects = [
   {
     name: "Prestige Spring Heights",
     location: "Budvel, Hyderabad",
-    image: "/assets/img/ongoing-projects/Prestige-Spring-Heights.jpg",
+    image: "/img/projects/Prestige-Spring-Heights.jpg",
     alt: "Prestige Spring Heights - Premium Apartments in Budvel Hyderabad",
     href: "/projects/Prestige-Spring-Heights",
     status: "Explore Project",
@@ -143,7 +143,7 @@ const projects = [
   {
     name: "Godrej Madison Avenue",
     location: "Kokapet, Hyderabad",
-    image: "/assets/img/ongoing-projects/Godrej-Madison-Avenue.jpg",
+    image: "/img/projects/Godrej-Madison-Avenue.jpg",
     alt: "Godrej Madison Avenue - Luxury Apartments in Kokapet Hyderabad",
     href: "",
     status: "Sold Out",
@@ -152,7 +152,7 @@ const projects = [
   {
     name: "The Prestige City",
     location: "Rajendra Nagar, Hyderabad",
-    image: "/assets/img/ongoing-projects/The-Prestige-City.jpg",
+    image: "/img/projects/The-Prestige-City.jpg",
     alt: "The Prestige City - Premium Apartments in Rajendra Nagar Hyderabad",
     href: "/projects/The-Prestige-City",
     status: "Explore Project",
