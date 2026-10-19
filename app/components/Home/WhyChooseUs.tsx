@@ -124,7 +124,7 @@ export default function WhyChooseUs() {
                 Have a location in mind?
               </h3>
               <p className="mt-2 text-sm leading-7 text-[#800000] sm:text-base">
-                Tell us what you are looking for and speak with our team.
+                Tell us what you are looking for and speak  our team.
               </p>
             </div>
 
