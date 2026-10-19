@@ -27,7 +27,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="overflow-hidden bg-[#D9FBE0] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl">
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
@@ -89,12 +89,12 @@ export default function HowItWorks() {
         </div>
 
         {/* CTA */}
-        <div className="mt-10 flex flex-col items-start justify-between gap-5 rounded-3xl bg-[#183323] p-6 sm:mt-14 sm:p-9 md:flex-row md:items-center">
+        <div className="mt-10 flex flex-col items-start justify-between gap-5 rounded-3xl bg-[#D9FBE0] p-6 sm:mt-14 sm:p-9 md:flex-row md:items-center">
           <div>
             <h3 className="text-xl font-extrabold text-white sm:text-2xl">
               Ready to explore your options?
             </h3>
-            <p className="mt-2 text-sm leading-7 text-white/75">
+            <p className="mt-2 text-sm leading-7 text-[#800000]">
               Tell us your preferred location and property type.
             </p>
           </div>

@@ -124,7 +124,7 @@ const projects = [
     location: "Near Pharma City, Nednur, Srisailam Highway",
     image: "/img/projects/Oxy-Flora.jpg",
     alt: "Oxy Flora farm land project near Nednur and Srisailam Highway",
-    href: "/projects/Oxy-Flora.html",
+    href: "/projects/Oxy-Flora",
     number: "01",
     description:
       "Explore the Oxy Flora project location near Pharma City, Nednur and Srisailam Highway.",
@@ -134,7 +134,7 @@ const projects = [
     location: "Balanagar, Bangalore Highway, Kallepally",
     image: "/img/projects/Golden-Farm.jpg",
     alt: "Golden Farm agricultural land project near Balanagar and Kallepally",
-    href: "/projects/Golden-Farm.html",
+    href: "/projects/Golden-Farm",
     number: "02",
     description:
       "Discover the Golden Farm project and enquire about its location, availability and documentation.",
@@ -412,7 +412,7 @@ export default function FarmLandsPage() {
 
             <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
               <img
-                src="/assets/img/ongoing-projects/Oxy-Flora.jpg"
+                src="/img/projects/farmland-near-hyderbad.png"
                 alt="Oxy Flora farmland project near Nednur and Srisailam Highway"
                 className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
                 fetchPriority="high"
@@ -420,11 +420,11 @@ export default function FarmLandsPage() {
 
               <div className="absolute bottom-5 left-5 right-5 rounded-xl border border-white/20 bg-black/50 p-5 text-white backdrop-blur-md sm:bottom-7 sm:left-7 sm:right-7 sm:p-6">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FFFF00]">
-                  Featured Project
+               Farm Land Project
                 </p>
-                <p className="mt-2 text-xl font-bold sm:text-2xl">Oxy Flora</p>
+                <p className="mt-2 text-xl font-bold sm:text-2xl">Sanjeevini Golden Farm</p>
                 <p className="mt-1 text-sm text-white/80">
-                  Near Pharma City, Nednur
+             Kallepally, Balanagar
                 </p>
               </div>
             </div>
@@ -504,7 +504,7 @@ export default function FarmLandsPage() {
         <div className="relative">
           <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
             <img
-              src="/assets/img/ongoing-projects/Golden-Farm.jpg"
+              src="/img/projects/Golden-Farm.jpg"
               alt="Golden Farm agricultural land project near Balanagar and Kallepally"
               className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
             />

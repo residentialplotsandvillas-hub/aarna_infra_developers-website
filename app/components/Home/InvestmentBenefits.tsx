@@ -34,7 +34,7 @@ const benefits = [
 
 export default function InvestmentBenefits() {
   return (
-    <section className="overflow-hidden bg-[#D9FBE0] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           {/* Section introduction */}
@@ -58,7 +58,7 @@ export default function InvestmentBenefits() {
 
             <Link
               href="/contact"
-              className="mt-7 inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-[#800000] px-6 py-3 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#600000]"
+              className="mt-7 inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-[#D9FBE0] px-6 py-3 font-bold text-white transition hover:-translate-y-0.5 hover:bg-bg-[#D9FBE0]"
             >
               Discuss Your Requirements
               <span aria-hidden="true">→</span>

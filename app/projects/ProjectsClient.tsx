@@ -20,7 +20,7 @@ const projects = [
     alt: "Magadha open plots near Maisigandi Temple Kadthal",
     location: "Near Maisigandi Temple, Kadthal",
     sold: false,
-    href: "/projects/Magadha.html",
+    href: "/projects/Magadha",
   },
   {
     name: "Karthikeya Green County",
@@ -36,7 +36,7 @@ const projects = [
     alt: "Golden City open plots near MRO Office Sadashivpet",
     location: "Near MRO Office, Sadashivpet",
     sold: false,
-    href: "/projects/Golden-City.html",
+    href: "/projects/Golden-City",
   },
   {
     name: "Golden Terra",
@@ -44,7 +44,7 @@ const projects = [
     alt: "Golden Terra open plots beside Shadnagar Tollgate",
     location: "Beside Shadnagar Tollgate, near RRR",
     sold: false,
-    href: "/projects/Golden-Terra.html",
+    href: "/projects/Golden-Terra",
   },
   {
     name: "Golden Valley",
@@ -60,7 +60,7 @@ const projects = [
     alt: "Green Meadows open plots in Balanagar and Shadnagar",
     location: "Balanagar Town and beside RRR (Shadnagar)",
     sold: false,
-    href: "/projects/Green-Meadows.html",
+    href: "/projects/Green-Meadows",
   },
 ];
 
@@ -364,7 +364,7 @@ export default function ProjectsClient() {
 
             <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
               <img
-                src="/assets/img/ongoing-projects/Golden-Terra.jpg"
+                src="/img/projects/hyderabad-real-estate-projects.jpeg"
                 alt="Real estate projects near Hyderabad by Aarna Infra Developers"
                 className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
                 fetchPriority="high"
@@ -374,12 +374,7 @@ export default function ProjectsClient() {
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FFFF00]">
                   Featured Project
                 </p>
-                <p className="mt-2 text-xl font-bold sm:text-2xl">
-                  Golden Terra
-                </p>
-                <p className="mt-1 text-sm text-white/80">
-                  Beside Shadnagar Tollgate
-                </p>
+               
               </div>
             </div>
 
@@ -458,7 +453,7 @@ export default function ProjectsClient() {
         <div className="relative">
           <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
             <img
-              src="/assets/img/ongoing-projects/Magadha.jpg"
+              src="/img/projects/Projects-Near-Hyderabad.png"
               alt="Approved open plots near Kadthal by Aarna Infra Developers"
               className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
             />

@@ -44,7 +44,7 @@ export default function PropertyLocations() {
   return (
     <section
       aria-labelledby="property-locations-heading"
-      className="overflow-hidden bg-[#D9FBE0] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
+      className="overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
     >
       <div className="mx-auto max-w-7xl">
         {/* SEO-focused section heading */}
@@ -131,7 +131,7 @@ export default function PropertyLocations() {
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/openplots"
-              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#800000] px-6 py-3 font-bold text-white transition hover:bg-[#600000]"
+              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#D9FBE0] px-6 py-3 font-bold text-white transition hover:bg-[#D9FBE0]"
             >
               View Open Plots
             </Link>

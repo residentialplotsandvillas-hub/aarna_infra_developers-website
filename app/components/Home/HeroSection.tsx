@@ -11,7 +11,7 @@ const locations = [
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-[#D9FBE0] text-[#183323]">
+    <section className="relative overflow-hidden bg-white text-[#183323]">
       {/* Decorative background */}
       <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full border-[45px] border-[#800000]/5" />
       <div className="pointer-events-none absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-white/40 blur-3xl" />
@@ -44,13 +44,14 @@ export default function HeroSection() {
 
           {/* Main buttons */}
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href="/openplots"
-              className="inline-flex min-h-14 items-center justify-center gap-3 rounded-xl bg-[#800000] px-7 py-4 font-bold text-white shadow-lg shadow-[#800000]/15 transition hover:-translate-y-1 hover:bg-[#600000]"
-            >
-              Explore Open Plots
-              <span aria-hidden="true">→</span>
-            </Link>
+          
+<Link
+  href="/openplots"
+  className="inline-flex min-h-14 items-center justify-center gap-3 rounded-xl bg-[#FFFF00] px-7 py-4 font-bold text-[#800000] shadow-lg shadow-[#800000]/15 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#600000]"
+>
+  Explore Open Plots
+  <span aria-hidden="true">→</span>
+</Link>
 
             <Link
               href="/contact"

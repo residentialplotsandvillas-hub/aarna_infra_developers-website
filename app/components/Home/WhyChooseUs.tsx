@@ -34,7 +34,7 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="relative overflow-hidden bg-[#D9FBE0] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="relative overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           {/* Left content */}
@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
 
             <Link
               href="/about"
-              className="mt-7 inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-[#800000] px-6 py-3 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#600000]"
+              className="mt-7 inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-[#D9FBE0] px-6 py-3 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#D9FBE0]"
             >
               About Aarna Infra
               <span aria-hidden="true">→</span>
@@ -114,16 +114,16 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Bottom call to action */}
-        <div className="mt-14 overflow-hidden rounded-3xl bg-[#183323] p-6 sm:p-9 lg:mt-20 lg:p-10">
+        <div className="mt-14 overflow-hidden rounded-3xl bg-[#D9FBE0] p-6 sm:p-9 lg:mt-20 lg:p-10">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <div>
-              <p className="text-xs font-extrabold tracking-[0.18em] text-[#FFFF00] sm:text-sm">
+              <p className="text-xs font-extrabold tracking-[0.18em] text-black sm:text-sm">
                 LET'S FIND YOUR PROPERTY
               </p>
               <h3 className="mt-3 text-2xl font-extrabold text-white sm:text-3xl">
                 Have a location in mind?
               </h3>
-              <p className="mt-2 text-sm leading-7 text-white/75 sm:text-base">
+              <p className="mt-2 text-sm leading-7 text-[#800000] sm:text-base">
                 Tell us what you are looking for and speak with our team.
               </p>
             </div>

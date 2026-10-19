@@ -54,7 +54,7 @@ const services = [
 
 export default function RealEstateServices() {
   return (
-    <section className="overflow-hidden bg-[#D9FBE0] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl">
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
@@ -106,7 +106,7 @@ export default function RealEstateServices() {
 
               <Link
                 href={service.href}
-                className="mt-6 inline-flex min-h-12 w-full items-center justify-between rounded-xl border border-[#800000]/15 px-4 py-3 text-sm font-extrabold text-[#800000] transition hover:border-[#800000] hover:bg-[#800000] hover:text-white"
+                className="mt-6 inline-flex min-h-12 w-full items-center justify-between rounded-xl border border-[#800000]/15 px-4 py-3 text-sm font-extrabold text-[#800000] transition hover:border-[#800000] hover:bg-[#D9FBE0] hover:text-white"
               >
                 Explore Service
                 <span aria-hidden="true">→</span>
@@ -116,9 +116,9 @@ export default function RealEstateServices() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-10 flex flex-col items-start justify-between gap-5 rounded-3xl bg-[#183323] p-6 sm:mt-14 sm:p-9 md:flex-row md:items-center">
+        <div className="mt-10 flex flex-col items-start justify-between gap-5 rounded-3xl bg-[#D9FBE0] p-6 sm:mt-14 sm:p-9 md:flex-row md:items-center">
           <div>
-            <p className="text-xs font-extrabold tracking-widest text-[#FFFF00] sm:text-sm">
+            <p className="text-xs font-extrabold tracking-widest text-black sm:text-sm">
               NEED PROPERTY INFORMATION?
             </p>
 
@@ -126,7 +126,7 @@ export default function RealEstateServices() {
               Let's discuss your requirements.
             </h3>
 
-            <p className="mt-2 text-sm leading-7 text-white/75">
+            <p className="mt-2 text-sm leading-7 text-[#800000]">
               Contact our team to ask about available property options.
             </p>
           </div>

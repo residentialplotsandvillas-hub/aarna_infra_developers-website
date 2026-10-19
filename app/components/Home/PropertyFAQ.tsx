@@ -35,7 +35,7 @@ export default function PropertyFAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="bg-[#D9FBE0] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         {/* Heading */}
         <div>
@@ -57,7 +57,7 @@ export default function PropertyFAQ() {
 
           <a
             href="/contact"
-            className="mt-7 inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-[#800000] px-6 py-3 font-bold text-white transition hover:bg-[#600000]"
+            className="mt-7 inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-[#D9FBE0] px-6 py-3 font-bold text-white transition hover:bg-[#D9FBE0]"
           >
             Ask a Question
             <span aria-hidden="true">→</span>

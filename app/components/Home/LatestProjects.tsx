@@ -31,7 +31,7 @@ const projects = [
 
 export default function LatestProjects() {
   return (
-    <section className="bg-[#D9FBE0] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
@@ -52,7 +52,7 @@ export default function LatestProjects() {
 
           <Link
             href="/projects"
-            className="inline-flex min-h-12 items-center justify-center gap-2 self-start rounded-xl border border-[#800000]/20 bg-white px-5 py-3 font-bold text-[#800000] transition hover:bg-[#800000] hover:text-white sm:self-auto"
+            className="inline-flex min-h-12 items-center justify-center gap-2 self-start rounded-xl border border-[#800000]/20 bg-white px-5 py-3 font-bold text-[#800000] transition hover:bg-[#D9FBE0] hover:text-white sm:self-auto"
           >
             View All Projects <span aria-hidden="true">→</span>
           </Link>
@@ -106,7 +106,7 @@ export default function LatestProjects() {
 
                 <Link
                   href="/contact"
-                  className="flex min-h-12 items-center justify-between rounded-xl bg-[#D9FBE0] px-4 py-3 font-extrabold text-[#800000] transition hover:bg-[#800000] hover:text-white"
+                  className="flex min-h-12 items-center justify-between rounded-xl bg-[#D9FBE0] px-4 py-3 font-extrabold text-[#800000] transition hover:bg-[#D9FBE0] hover:text-white"
                 >
                   Request Details
                   <span aria-hidden="true">→</span>

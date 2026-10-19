@@ -429,7 +429,7 @@ export default function ApartmentsPage() {
 
             <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
               <img
-                src="/assets/img/ongoing-projects/Myscape-Songs-Of-The-Sun.jpg"
+                src="/img/projects/Apartments-in-hyderabad.png"
                 alt="Premium apartments in Hyderabad by Aarna Infra Developers"
                 className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
                 fetchPriority="high"
@@ -439,12 +439,7 @@ export default function ApartmentsPage() {
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FFFF00]">
                   Featured Project
                 </p>
-                <p className="mt-2 text-xl font-bold sm:text-2xl">
-                  Myscape Songs Of The Sun
-                </p>
-                <p className="mt-1 text-sm text-white/80">
-                  Near Financial District, Hyderabad
-                </p>
+               
               </div>
             </div>
 
@@ -523,7 +518,7 @@ export default function ApartmentsPage() {
         <div className="relative">
           <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
             <img
-              src="/assets/img/ongoing-projects/Prestige-Spring-Heights.jpg"
+              src="/img/projects/hyderabad-best-luxury-apartments.jpg"
               alt="Gated community apartments in Hyderabad"
               className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
             />

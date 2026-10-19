@@ -37,7 +37,7 @@ const properties = [
 
 export default function FeaturedProperties() {
   return (
-    <section className="relative overflow-hidden bg-[#D9FBE0] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="relative overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl">
         {/* Section heading */}
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
@@ -117,7 +117,7 @@ export default function FeaturedProperties() {
 
                 <Link
                   href={property.href}
-                  className="flex min-h-12 items-center justify-between rounded-xl border border-[#800000]/15 px-4 py-3 text-sm font-extrabold text-[#800000] transition hover:border-[#800000] hover:bg-[#800000] hover:text-white"
+                  className="flex min-h-12 items-center justify-between rounded-xl border border-[#800000]/15 px-4 py-3 text-sm font-extrabold text-[#800000] transition hover:border-[#800000] hover:bg-[#D9FBE0] hover:text-white"
                 >
                   Explore Properties
                   <span aria-hidden="true" className="text-lg">
@@ -130,12 +130,12 @@ export default function FeaturedProperties() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-10 flex flex-col items-center justify-between gap-5 rounded-3xl bg-[#183323] p-6 text-center sm:mt-14 sm:p-8 md:flex-row md:text-left">
+        <div className="mt-10 flex flex-col items-center justify-between gap-5 rounded-3xl bg-[#D9FBE0] p-6 text-center sm:mt-14 sm:p-8 md:flex-row md:text-left">
           <div>
             <h3 className="text-xl font-extrabold text-white sm:text-2xl">
               Looking for a specific property?
             </h3>
-            <p className="mt-2 text-sm leading-6 text-white/75">
+            <p className="mt-2 text-sm leading-6 text-[#800000]">
               Contact our team to discuss your requirements.
             </p>
           </div>

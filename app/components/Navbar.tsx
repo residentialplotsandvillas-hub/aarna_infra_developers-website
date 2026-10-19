@@ -248,7 +248,7 @@ export default function Navbar() {
           {/* Desktop call button */}
           <a
             href={`tel:${PHONE}`}
-            className="hidden shrink-0 items-center gap-2 rounded-full bg-[#800000] px-4 py-3 text-sm font-extrabold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#600000] 2xl:inline-flex"
+            className="hidden shrink-0 items-center gap-2 rounded-full bg-[#FFFF00] px-4 py-3 text-sm font-extrabold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#600000] 2xl:inline-flex"
           >
             <PhoneIcon />
             Call Now

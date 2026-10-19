@@ -121,7 +121,7 @@ const projects = [
     location: "Padmavathi Nagar, Bonguluru, Telangana",
     image: "/img/projects/SLN-Sundaram.jpg",
     alt: "SLN Sundaram Palm Villas in Padmavathi Nagar, Bonguluru, Telangana",
-    href: "/projects/SLN-Sundaram-Palm-Villas.html",
+    href: "/projects/SLN-Sundaram-Palm-Villas",
     number: "01",
     description:
       "Explore SLN Sundaram Palm Villas in Padmavathi Nagar, Bonguluru. Review the project details and enquire about availability, pricing and site visits.",
@@ -395,7 +395,7 @@ export default function VillasHousesPage() {
 
             <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
               <img
-                src="/img/projects/SLN-Sundaram-Palm-Villas.jpg"
+                src="/img/projects/SLN-Sundaram.jpg"
                 alt="SLN Sundaram Palm Villas in Padmavathi Nagar, Bonguluru, Telangana"
                 className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
                 fetchPriority="high"
@@ -493,7 +493,7 @@ export default function VillasHousesPage() {
         <div className="relative">
           <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-2xl shadow-black/10">
             <img
-              src="/assets/img/ongoing-projects/SLN-Sundaram-Palm-Villas.jpg"
+              src="/img/villas-houses-lands.webp"
               alt="Luxury villas in Hyderabad by Aarna Infra Developers"
               className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[430px] lg:h-[500px]"
             />
