@@ -2,8 +2,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  cacheComponents: true,
-  partialPrefetching: true,
   productionBrowserSourceMaps: false,
 
   turbopack: {
@@ -17,3 +15,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
