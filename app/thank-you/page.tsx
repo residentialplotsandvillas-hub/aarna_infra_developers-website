@@ -22,8 +22,13 @@ export const metadata: Metadata = {
   },
 };
 
-/* Prevent any caching — always show fresh confirmation */
-export const dynamic = "force-dynamic";
+/* ============================================================
+   NOTE: No `export const dynamic` here.
+   With `experimental.cacheComponents: true` enabled in next.config,
+   route segment configs like `dynamic` are not compatible.
+   This route is automatically dynamic because it awaits
+   `searchParams` — Next.js infers request-time rendering.
+   ============================================================ */
 
 /* ============================================================
    PAGE — accepts optional ?type= site_visit | brochure | enquiry
@@ -92,7 +97,9 @@ const QUICK_LINKS = [
 
 export default async function ThankYouPage({ searchParams }: Props) {
   const { type } = await searchParams;
-  const key = (type && type in MESSAGES ? type : "default") as keyof typeof MESSAGES;
+  const key = (
+    type && type in MESSAGES ? type : "default"
+  ) as keyof typeof MESSAGES;
   const msg = MESSAGES[key];
 
   /* JSON-LD — Organization only, no listing markup on a utility page */
